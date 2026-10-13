@@ -1,0 +1,31 @@
+<main class="stats-page">
+  <h1>Statistiques</h1>
+
+  <section class="stats-grid" aria-label="Statistiques des tâches">
+    <article>
+      <strong>{{ total }}</strong>
+      <span>Total</span>
+    </article>
+    <article>
+      <strong>{{ done }}</strong>
+      <span>Faites</span>
+    </article>
+    <article>
+      <strong>{{ todo }}</strong>
+      <span>À faire</span>
+    </article>
+  </section>
+
+  <section class="progression-card" aria-label="Pourcentage de tâches terminées">
+    <div class="progression">
+      <mat-progress-spinner
+        mode="determinate"
+        [value]="completionRate"
+        diameter="112"
+        aria-label="Pourcentage de tâches terminées"
+      ></mat-progress-spinner>
+      <strong>{{ completionRate }} %</strong>
+    </div>
+    <span>Terminées</span>
+  </section>
+</main>

@@ -1,49 +1,23 @@
-.ajouter-tache {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.entree-tache {
-  width: 100%;
-}
-
-.liste-taches {
-  max-width: 700px;
-  margin-top: 32px;
-}
-
-.controles-taches {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 12px;
-  margin-bottom: 20px;
-}
-
-.controles-taches input,
-.controles-taches select {
-  min-height: 36px;
-  padding: 0 8px;
-}
-
-.liste-taches ul {
-  padding: 0;
-  list-style: none;
-}
-
-.tache {
+.navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.navigation nav {
+  display: flex;
   gap: 16px;
-  padding: 12px 0;
-  border-bottom: 1px solid #d9d9d9;
 }
 
-.details-tache {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 4px;
-  color: #555;
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation a.active {
+  font-weight: 700;
+  text-decoration: underline;
 }
