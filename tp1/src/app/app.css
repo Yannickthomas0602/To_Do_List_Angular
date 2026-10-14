@@ -1,23 +1,47 @@
+
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 900px;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 12px 48px;
+  background-color: #D6EBFF;
 }
 
 .navigation nav {
   display: flex;
   gap: 16px;
+  margin-left: auto;
+}
+
+.navigation-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: x-large;
+}
+
+.navigation-brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .navigation a {
   color: inherit;
   text-decoration: none;
+  font-size: large;
 }
 
 .navigation a.active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    padding: 12px 20px;
+  }
 }
